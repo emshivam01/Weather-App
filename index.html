@@ -1,59 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <script
-      src="https://kit.fontawesome.com/855617322c.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Weather App</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: "Sora", sans-serif;
-      }
-    </style>
-  </head>
+  <script src="https://kit.fontawesome.com/855617322c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <title>Weather App</title>
 
-  <body class="bg-[#2192FF] p-6">
-    <nav class="text-xl text-white font-medium flex justify-between">
-      <a href="">Weatha</a>
-      <a href="">Github Link</a>
-    </nav>
-    <div class="md:flex md:justify-center md:items-center md:mt-8">
-      <div
-        id="division"
-        class="bg-white rounded-md shadow-xl mt-20 p-4 flex flex-col gap-6 md:w-96"
-      >
-        <p class="text-2xl font-medium">Weather App</p>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Sora", sans-serif;
+    }
+  </style>
+</head>
 
-        <input
-          id="input"
-          class="w-full h-12 rounded-md outline-none border-2 focus:shadow-xl border-gray-900 text-center text-xl placeholder:text-black"
-          type="text"
-          placeholder="Enter your city.."
-        />
-        <button
-          id="btn"
-          class="py-2 px-4 rounded-md text-white bg-blue-600 m-auto w-auto text-xl border-none"
-        >
-          Search
-        </button>
-      </div>
+<body class="bg-[#2192FF] p-6">
+  <nav class="text-xl text-white font-medium flex justify-between">
+    <a href="https://github.com/emshivam01/Weather-App" target="_blank">Weatha</a>
+    <a href="">Github Link</a>
+  </nav>
+  <div class="md:flex md:justify-center md:items-center md:mt-8">
+    <div id="division" class="bg-white rounded-md shadow-xl mt-20 p-4 flex flex-col gap-6 md:w-96">
+      <p class="text-2xl font-medium">Weather App</p>
+
+      <input id="input"
+        class="w-full h-12 rounded-md outline-none border-2 focus:shadow-xl border-gray-900 text-center text-xl placeholder:text-black"
+        type="text" placeholder="Enter your city.." />
+      <button id="btn" class="py-2 px-4 rounded-md text-white bg-blue-600 m-auto w-auto text-xl border-none">
+        Search
+      </button>
     </div>
+  </div>
 
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
+
 </html>
