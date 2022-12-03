@@ -1,71 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet" />
-
-    <script src="https://kit.fontawesome.com/855617322c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
+    <script
+      src="https://kit.fontawesome.com/855617322c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
 
     <style>
-        * {
-            font-family: "Poppins", sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Sora", sans-serif;
+      }
     </style>
-</head>
+  </head>
 
-<body class="bg-[#2192FF] flex justify-center items-center h-screen">
-    <div class="bg-white p-6 rounded-xl shadow-2xl flex flex-col gap-6">
-        <div class="flex items-center gap-4">
-            <input id="cityName" type="text" placeholder="Enter your city name"
-                class="rounded-md px-2 text-black text-center font-medium text-lg placeholder:text-black placeholder:text-center w-full h-10 outline-1 border-2 border-gray-500 focus:shadow-lg" />
+  <body class="bg-[#2192FF] p-6">
+    <nav class="text-xl text-white font-medium flex justify-between">
+      <a href="">Weatha</a>
+      <a href="">Github Link</a>
+    </nav>
+    <div class="md:flex md:justify-center md:items-center md:mt-8">
+      <div
+        id="division"
+        class="bg-white rounded-md shadow-xl mt-20 p-4 flex flex-col gap-6 md:w-96"
+      >
+        <p class="text-2xl font-medium">Weather App</p>
 
-            <button id="btn" class="bg-blue-600 p-1 px-3 rounded-lg h-10">
-                <img class="w-10" src="./assets/search-white-96.png" alt="" />
-            </button>
-        </div>
-
-
-        <div class="flex flex-col-reverse items-center justify-center gap-4">
-            <p id="" class="text-5xl"><span id="temp">32</span>&#176; C</p>
-            <img id="weather-img" class="w-[90px]" src="./assets/summer.png" alt="" />
-        </div>
-
-        <div id="weather-status" class="text-xl font-semibold text-center"></div>
-
-        <div class="flex justify-center items-center gap-2">
-            <i class="fa-solid fa-location-dot"></i>
-            <h2 id="location" class="text-center font-semibold text-xl">Location</h2>
-        </div>
-
-        <div class="flex justify-between gap-6">
-            <div class="flex justify-center items-center">
-                <img class="w-12" src="./assets/temperature (1).png" alt="" />
-                <div>
-                    <p class="font-medium text-base"> <span id="feels_like">30</span> &#176;</p>
-                    <p class="font-medium text-base">Feels like</p>
-                </div>
-            </div>
-
-            <div class="flex justify-center items-center gap-2">
-                <img class="w-10" src="./assets/humid01.png" alt="" />
-                <div>
-                    <p class="font-medium text-base"><span id="humidity">70</span> %</p>
-                    <p class="font-medium text-base">Humidity</p>
-                </div>
-            </div>
-        </div>
+        <input
+          id="input"
+          class="w-full h-12 rounded-md outline-none border-2 focus:shadow-xl border-gray-900 text-center text-xl placeholder:text-black"
+          type="text"
+          placeholder="Enter your city.."
+        />
+        <button
+          id="btn"
+          class="py-2 px-4 rounded-md text-white bg-blue-600 m-auto w-auto text-xl border-none"
+        >
+          Search
+        </button>
+      </div>
     </div>
 
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
