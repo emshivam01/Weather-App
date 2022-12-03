@@ -26,7 +26,6 @@ btn.addEventListener("click", () => {
       input.value = "";
 
       section.classList.add(
-        "shadow-lg",
         "p-2",
         "py-6",
         "rounded-md",
@@ -61,10 +60,10 @@ btn.addEventListener("click", () => {
 
       place.innerText = `${res.name}`;
       humidity.innerText = ` ${res.main.humidity} %`;
-      feels_like.innerHTML = ` ${Math.round(res.main.feels_like)} &#176; C`;
+      feels_like.innerHTML = ` ${Math.round(res.main.feels_like)}&#176; C`;
       humidityText.innerHTML = "Humidity: &nbsp;";
       feels_likeText.innerHTML = "Feels Like: &nbsp;";
-      temp.innerHTML = `${Math.round(res.main.temp)} &#176; C`;
+      temp.innerHTML = `${Math.round(res.main.temp)}&#176; C`;
       weatherType.innerText = `${res.weather[0].main}`;
       tempSec.appendChild(temp);
       tempSec.appendChild(weatherType);
