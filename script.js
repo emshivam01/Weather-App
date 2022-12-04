@@ -88,6 +88,5 @@ btn.addEventListener("click", () => {
 
       // Appending Inside Main Division
       div.insertBefore(section, input);
-      console.log(res);
     });
 });
